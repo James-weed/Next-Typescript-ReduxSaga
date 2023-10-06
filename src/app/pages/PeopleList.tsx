@@ -10,13 +10,12 @@ import { usePeople } from '../hooks/usePeople'
 
 export default function PeopleList() {
     
-    const [peoplelist, setPeoplelist] = useState<People[]>([]);
-    const dispatch = useDispatch();
-    const peoples = usePeople();
-
-    const handleClick = () => {
-        getPeople().then((res) => dispatch(getPeopleAction(res as unknown as People)));
-        setPeoplelist(peoples);
+  const dispatch = useDispatch();
+  const peoples = usePeople();
+  console.log(peoples)
+  const handleClick = () => {
+    dispatch(getPeopleAction() as any);
+      // getPeople().then((res) => dispatch(getPeopleAction(res as unknown as People)));
     }
 
   useEffect(() => {
@@ -31,12 +30,13 @@ export default function PeopleList() {
         </Head>
       <div className='flex items-center justify-center mt-4'>
         <button  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={() => {handleClick()}}>
-          Other People
+          Get People
         </button>
       </div>
       <div className='container mx-auto'>
         <div className='flex flex-wrap'>
-          {peoplelist.map((people : People)=> (
+          {!peoples.loading ? 'loading...' :
+            peoples.peoples.map((people: People) => (
             <Card data={people} key = {people.id} />
           ))}
         </div>
