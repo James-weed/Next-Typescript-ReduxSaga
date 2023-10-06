@@ -2,7 +2,8 @@ import { People } from "./people";
 
 export interface PeopleState {
     peoples: People[];
-    loading: boolean
+    loading: boolean,
+    error: string
 }
 
 export interface RootState {
