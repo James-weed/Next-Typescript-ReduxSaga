@@ -1,6 +1,7 @@
-import { People } from '../model/people';
+import { People } from '../../model/people';
+import { PeopleState } from '../../model/root_state';
 
-const initialState = {
+const initialState: PeopleState = {
     loading: false,
     peoples: []
 }
