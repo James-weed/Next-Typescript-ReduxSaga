@@ -1,4 +1,4 @@
-import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
+import { call, put, takeLatest } from "redux-saga/effects";
 import { getPeople } from "@/api/people";
 import { ActionType, getPeopleLoading, getPeopleSuccess, getPeopleFailure } from "./actions/peopleAction";
 
@@ -13,7 +13,7 @@ function* getPeopleSaga(action: ActionType) {
 }
 
 function* mysaga() {
-    yield takeEvery(ActionType.GET_PEOPLE_REQUEST, getPeopleSaga)
+    yield takeLatest(ActionType.GET_PEOPLE_REQUEST, getPeopleSaga)
 }
 
 export default mysaga
