@@ -8,18 +8,18 @@ const initialState: PeopleState = {
     error: ''
 }
 
-const peopleReducer = (state = initialState, action: { type: string; payload: People }) => {
+const peopleReducer = (state = initialState, action: { type: string; payload: People[] }) => {
     switch (action.type) {
         case ActionType.GET_PEOPLE_LOADING:
             return {
                 ...state,
-                loading: false
+                loading: true
             }
         case ActionType.GET_PEOPLE_SUCCESS:
             return {
                 ...state,
-                peoples: action.payload,
-                loading: true
+                peoples: [...state.peoples, ...action.payload],
+                loading: false
             };
         case ActionType.GET_PEOPLE_FAILURE:
             return {
