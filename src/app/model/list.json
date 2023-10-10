@@ -1,392 +1,81 @@
-[
-    {
-        "address": {
-            "city": "Doylebury",
-            "coordinates": {
-                "lat": -6.71697616214729,
-                "lng": -89.5758890943488
-            },
-            "country": "United States",
-            "state": "Maryland",
-            "street_address": "18232 McKenzie Brook",
-            "street_name": "Jarrod Burg",
-            "zip_code": "10768"
+{
+    "limit": 20,
+    "message": "Sample data for testing and learning purposes",
+    "offset": 10,
+    "success": true,
+    "total_users": 14,
+    "users": [
+        {
+            "city": "Lauraville",
+            "country": "Jordan",
+            "date_of_birth": "1877-11-14T00:00:00",
+            "email": "mark.harrington.664@slingacademy.com",
+            "first_name": "Mark",
+            "gender": "male",
+            "id": 664,
+            "job": "Location manager",
+            "last_name": "Harrington",
+            "latitude": 54.514374,
+            "longitude": -154.039817,
+            "phone": "001-789-495-2116x3490",
+            "profile_picture": "https://api.slingacademy.com/public/sample-users/default.png",
+            "state": "Iowa",
+            "street": "98335 Mccormick Brooks Suite 378",
+            "zipcode": "00881"
         },
-        "avatar": "https://robohash.org/quasetvelit.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "6771-8981-9253-5426"
+        {
+            "city": "West Donna",
+            "country": "Jordan",
+            "date_of_birth": "1880-03-25T00:00:00",
+            "email": "steven.walker.750@slingacademy.com",
+            "first_name": "Steven",
+            "gender": "male",
+            "id": 750,
+            "job": "Horticulturist, commercial",
+            "last_name": "Walker",
+            "latitude": -65.1768655,
+            "longitude": -53.688215,
+            "phone": "290.253.6502",
+            "profile_picture": "https://api.slingacademy.com/public/sample-users/default.png",
+            "state": "Alabama",
+            "street": "382 Snyder Haven Apt. 731",
+            "zipcode": "40780"
         },
-        "date_of_birth": "1998-08-14",
-        "email": "mirtha.ferry@email.com",
-        "employment": {
-            "key_skill": "Technical savvy",
-            "title": "Legacy Hospitality Strategist"
+        {
+            "city": "Port Jordan",
+            "country": "Bermuda",
+            "date_of_birth": "1879-09-08T00:00:00",
+            "email": "abigail.davis.953@slingacademy.com",
+            "first_name": "Abigail",
+            "gender": "female",
+            "id": 953,
+            "job": "Psychotherapist",
+            "last_name": "Davis",
+            "latitude": -0.7832395,
+            "longitude": -3.726637,
+            "phone": "001-314-411-5604x725",
+            "profile_picture": "https://api.slingacademy.com/public/sample-users/default.png",
+            "state": "Vermont",
+            "street": "350 Robert Trace",
+            "zipcode": "19333"
         },
-        "first_name": "Mirtha",
-        "gender": "Genderqueer",
-        "id": 9595,
-        "last_name": "Ferry",
-        "password": "Mp4saeNAjw",
-        "phone_number": "+1-784 189.238.8792 x19664",
-        "social_insurance_number": "753498807",
-        "subscription": {
-            "payment_method": "Bitcoins",
-            "plan": "Standard",
-            "status": "Active",
-            "term": "Annual"
-        },
-        "uid": "4de7d0a8-06e7-4c59-b8e5-deced58f9a21",
-        "username": "mirtha.ferry"
-    },
-    {
-        "address": {
-            "city": "Walkerfurt",
-            "coordinates": {
-                "lat": 29.525834639766458,
-                "lng": -109.07220408307344
-            },
-            "country": "United States",
-            "state": "Oklahoma",
-            "street_address": "618 Mante Court",
-            "street_name": "Tierra Lake",
-            "zip_code": "65215-8437"
-        },
-        "avatar": "https://robohash.org/culpatemporibusquis.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "4406-2488-7381-6992"
-        },
-        "date_of_birth": "1994-11-20",
-        "email": "bethanie.littel@email.com",
-        "employment": {
-            "key_skill": "Teamwork",
-            "title": "Legal Specialist"
-        },
-        "first_name": "Bethanie",
-        "gender": "Genderfluid",
-        "id": 5031,
-        "last_name": "Littel",
-        "password": "nzcsKfgqXR",
-        "phone_number": "+66 168-151-3862 x486",
-        "social_insurance_number": "998971667",
-        "subscription": {
-            "payment_method": "Bitcoins",
-            "plan": "Platinum",
-            "status": "Active",
-            "term": "Full subscription"
-        },
-        "uid": "87509c18-0be0-49f5-ab99-30d5e3b2d347",
-        "username": "bethanie.littel"
-    },
-    {
-        "address": {
-            "city": "Libbieshire",
-            "coordinates": {
-                "lat": 28.451715070204543,
-                "lng": -31.730015838125553
-            },
-            "country": "United States",
-            "state": "New Hampshire",
-            "street_address": "716 Schinner Valleys",
-            "street_name": "Hillary Corners",
-            "zip_code": "59947-4641"
-        },
-        "avatar": "https://robohash.org/quiaquiest.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "6771-8955-3047-0753"
-        },
-        "date_of_birth": "1959-12-31",
-        "email": "raven.hessel@email.com",
-        "employment": {
-            "key_skill": "Self-motivated",
-            "title": "Consulting Assistant"
-        },
-        "first_name": "Raven",
-        "gender": "Polygender",
-        "id": 1579,
-        "last_name": "Hessel",
-        "password": "EkTRNtMGlW",
-        "phone_number": "+223 706-483-6121 x84856",
-        "social_insurance_number": "561730433",
-        "subscription": {
-            "payment_method": "Google Pay",
-            "plan": "Professional",
-            "status": "Active",
-            "term": "Annual"
-        },
-        "uid": "d825d7c7-1b3b-4653-a07b-716953d21e8d",
-        "username": "raven.hessel"
-    },
-    {
-        "address": {
-            "city": "Gerryshire",
-            "coordinates": {
-                "lat": 45.93345699167307,
-                "lng": 166.58678052880845
-            },
-            "country": "United States",
-            "state": "Michigan",
-            "street_address": "7163 Stanton Motorway",
-            "street_name": "Benjamin Rapids",
-            "zip_code": "20424-0876"
-        },
-        "avatar": "https://robohash.org/minimaexcepturisunt.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "6771-8944-5614-2181"
-        },
-        "date_of_birth": "1991-08-07",
-        "email": "thresa.cronin@email.com",
-        "employment": {
-            "key_skill": "Networking skills",
-            "title": "Legacy Administration Specialist"
-        },
-        "first_name": "Thresa",
-        "gender": "Bigender",
-        "id": 1437,
-        "last_name": "Cronin",
-        "password": "9rI05eBjQO",
-        "phone_number": "+1-684 770-129-1346 x016",
-        "social_insurance_number": "158298968",
-        "subscription": {
-            "payment_method": "Google Pay",
-            "plan": "Student",
-            "status": "Idle",
-            "term": "Full subscription"
-        },
-        "uid": "2d61230b-281d-4c84-a5c5-498c57886b22",
-        "username": "thresa.cronin"
-    },
-    {
-        "address": {
-            "city": "Bruenhaven",
-            "coordinates": {
-                "lat": -67.09265637061569,
-                "lng": 12.850888281689805
-            },
-            "country": "United States",
-            "state": "Indiana",
-            "street_address": "265 Dan Trail",
-            "street_name": "Pandora Heights",
-            "zip_code": "86413"
-        },
-        "avatar": "https://robohash.org/eaomniscupiditate.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "4522513989458"
-        },
-        "date_of_birth": "1975-12-02",
-        "email": "sherri.price@email.com",
-        "employment": {
-            "key_skill": "Fast learner",
-            "title": "Farming Liaison"
-        },
-        "first_name": "Sherri",
-        "gender": "Male",
-        "id": 2412,
-        "last_name": "Price",
-        "password": "gsSxtuzBkq",
-        "phone_number": "+213 343.208.4544",
-        "social_insurance_number": "704489301",
-        "subscription": {
-            "payment_method": "Cash",
-            "plan": "Starter",
-            "status": "Blocked",
-            "term": "Payment in advance"
-        },
-        "uid": "33d0210f-aa8c-499f-9250-5a313e71dbf8",
-        "username": "sherri.price"
-    },
-    {
-        "address": {
-            "city": "West Jewel",
-            "coordinates": {
-                "lat": 85.34776629051706,
-                "lng": -8.741471073514788
-            },
-            "country": "United States",
-            "state": "New Hampshire",
-            "street_address": "3319 Vivan Square",
-            "street_name": "Adria Pike",
-            "zip_code": "58165"
-        },
-        "avatar": "https://robohash.org/aspernaturmollitiasit.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "6771-8980-6765-5390"
-        },
-        "date_of_birth": "2003-07-15",
-        "email": "antoine.weissnat@email.com",
-        "employment": {
-            "key_skill": "Self-motivated",
-            "title": "Central Marketing Strategist"
-        },
-        "first_name": "Antoine",
-        "gender": "Agender",
-        "id": 3590,
-        "last_name": "Weissnat",
-        "password": "rmJGHM0esD",
-        "phone_number": "+238 888.512.5282 x135",
-        "social_insurance_number": "581765286",
-        "subscription": {
-            "payment_method": "Paypal",
-            "plan": "Premium",
-            "status": "Pending",
-            "term": "Annual"
-        },
-        "uid": "7b87fb2a-9b5d-4135-8107-93071ced2caf",
-        "username": "antoine.weissnat"
-    },
-    {
-        "address": {
-            "city": "Abemouth",
-            "coordinates": {
-                "lat": 26.27985199048814,
-                "lng": -95.08905912042073
-            },
-            "country": "United States",
-            "state": "Mississippi",
-            "street_address": "75024 Luettgen Gardens",
-            "street_name": "Reynaldo Alley",
-            "zip_code": "47492-8156"
-        },
-        "avatar": "https://robohash.org/culpaadipiscivoluptatem.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "6771-8953-0722-7030"
-        },
-        "date_of_birth": "1980-07-16",
-        "email": "brett.wunsch@email.com",
-        "employment": {
-            "key_skill": "Communication",
-            "title": "IT Specialist"
-        },
-        "first_name": "Brett",
-        "gender": "Male",
-        "id": 1824,
-        "last_name": "Wunsch",
-        "password": "4WcEUrkz1R",
-        "phone_number": "+355 1-675-792-6459 x450",
-        "social_insurance_number": "789947868",
-        "subscription": {
-            "payment_method": "Debit card",
-            "plan": "Bronze",
-            "status": "Idle",
-            "term": "Full subscription"
-        },
-        "uid": "2c77a35a-c5c8-4505-b472-d14d7e1b3f2a",
-        "username": "brett.wunsch"
-    },
-    {
-        "address": {
-            "city": "Rippinview",
-            "coordinates": {
-                "lat": 51.55653818884872,
-                "lng": -90.741823578029
-            },
-            "country": "United States",
-            "state": "Hawaii",
-            "street_address": "32467 Metz Club",
-            "street_name": "Stracke Spurs",
-            "zip_code": "15260-4884"
-        },
-        "avatar": "https://robohash.org/iuresuscipitvoluptatem.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "6771-8913-3638-6608"
-        },
-        "date_of_birth": "1988-10-23",
-        "email": "arlie.flatley@email.com",
-        "employment": {
-            "key_skill": "Technical savvy",
-            "title": "Future Planner"
-        },
-        "first_name": "Arlie",
-        "gender": "Agender",
-        "id": 845,
-        "last_name": "Flatley",
-        "password": "gksK9fPHva",
-        "phone_number": "+596 568-011-2434 x203",
-        "social_insurance_number": "604103929",
-        "subscription": {
-            "payment_method": "Credit card",
-            "plan": "Essential",
-            "status": "Pending",
-            "term": "Annual"
-        },
-        "uid": "00e51b46-1f56-4314-a9be-658c2950ae15",
-        "username": "arlie.flatley"
-    },
-    {
-        "address": {
-            "city": "Nicolasport",
-            "coordinates": {
-                "lat": 15.602762522095873,
-                "lng": -159.69058777263277
-            },
-            "country": "United States",
-            "state": "Wisconsin",
-            "street_address": "831 Weston Views",
-            "street_name": "Dewayne Trace",
-            "zip_code": "48894"
-        },
-        "avatar": "https://robohash.org/nonimpeditvero.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "5548-9983-5996-2456"
-        },
-        "date_of_birth": "1986-04-16",
-        "email": "josh.bruen@email.com",
-        "employment": {
-            "key_skill": "Work under pressure",
-            "title": "Senior Design Planner"
-        },
-        "first_name": "Josh",
-        "gender": "Agender",
-        "id": 3616,
-        "last_name": "Bruen",
-        "password": "HJdRQlcO7Y",
-        "phone_number": "+46 (675) 389-5790 x89597",
-        "social_insurance_number": "232895433",
-        "subscription": {
-            "payment_method": "Bitcoins",
-            "plan": "Platinum",
-            "status": "Active",
-            "term": "Monthly"
-        },
-        "uid": "4633e047-1e8f-4f32-a4f0-7bd8108b6d12",
-        "username": "josh.bruen"
-    },
-    {
-        "address": {
-            "city": "Jerilynshire",
-            "coordinates": {
-                "lat": 50.286420551748535,
-                "lng": -95.79309332035467
-            },
-            "country": "United States",
-            "state": "Illinois",
-            "street_address": "354 Alberto Inlet",
-            "street_name": "Lakia Curve",
-            "zip_code": "49204-0046"
-        },
-        "avatar": "https://robohash.org/accusamusexplicaboeum.png?size=300x300\u0026set=set1",
-        "credit_card": {
-            "cc_number": "4479802357097"
-        },
-        "date_of_birth": "1978-01-02",
-        "email": "sylvie.cremin@email.com",
-        "employment": {
-            "key_skill": "Self-motivated",
-            "title": "Human Consultant"
-        },
-        "first_name": "Sylvie",
-        "gender": "Polygender",
-        "id": 76,
-        "last_name": "Cremin",
-        "password": "kZxRiItSrm",
-        "phone_number": "+247 960.537.7513 x78001",
-        "social_insurance_number": "689071264",
-        "subscription": {
-            "payment_method": "Credit card",
-            "plan": "Diamond",
-            "status": "Idle",
-            "term": "Full subscription"
-        },
-        "uid": "1dd2c4cd-e459-4b06-885d-e8a37c5b9220",
-        "username": "sylvie.cremin"
-    }
-]
+        {
+            "city": "Lake Nicholasberg",
+            "country": "Cuba",
+            "date_of_birth": "1959-07-30T00:00:00",
+            "email": "jordan.hamilton.964@slingacademy.com",
+            "first_name": "Jordan",
+            "gender": "female",
+            "id": 964,
+            "job": "Surgeon",
+            "last_name": "Hamilton",
+            "latitude": -76.952702,
+            "longitude": -39.635937,
+            "phone": "704-670-5839x5926",
+            "profile_picture": "https://api.slingacademy.com/public/sample-users/default.png",
+            "state": "Wyoming",
+            "street": "7317 Lance Corner",
+            "zipcode": "10086"
+        }
+    ]
+}
