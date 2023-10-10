@@ -1,6 +1,6 @@
 import { People } from "./people";
 
-export interface PeopleState {
+export interface PeopleState<T = unknown> {
     peoples: People[];
     loading: boolean,
     error: string

@@ -1,30 +1,43 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from '../component/Card'
 import Head from 'next/head'
-import { useDispatch } from 'react-redux'
-import { getPeopleRequest } from '../store/actions/peopleAction'
-import { usePeople } from '../store/hooks/usePeople'
-import { People } from '../model/people'
+// import { useDispatch } from 'react-redux'
+// import { getPeopleRequest } from '../store/actions/peopleAction'
+// import { usePeople } from '../store/hooks/usePeople'
+// import { People } from '../model/people'
+import { useUsercontext } from '../store/context'
 
 export default function PeopleList() {
-    
-  const dispatch = useDispatch();
-  const people = usePeople();
-  console.log(people)
+
+  // const dispatch = useDispatch();
+  // const people = usePeople();
+  // console.log(people)
+
+  const {peoples, isLoading, addPeoples, resetPeoples } = useUsercontext()
 
   const handleClick = () => {
-    dispatch(getPeopleRequest());
+    // dispatch(getPeopleRequest());
+    // fetchUsers()
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    resetPeoples()
   }
-  
-  const handleScroll = () => {
-    if ( window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100 ) {
-      handleClick()
+
+   const handleScroll = () => {
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    if (scrollTop + clientHeight == scrollHeight) {
+      addPeoples();
     }
   };
+  
+  // const handleScroll = () => {
+  //   if ( window.innerHeight + window.scrollY == document.documentElement.scrollHeight ) {
+  //     addPeoples()
+  //   }
+  // };
 
   useEffect(() => {
-    handleClick()
+    addPeoples()
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
@@ -38,16 +51,16 @@ export default function PeopleList() {
       </Head>
       <div className='flex items-center justify-center mt-4'>
         <button  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={() => {handleClick()}}>
-          {people.loading ? 'loading...' :'Get People'}
+          {isLoading ? 'loading...' :'Get People'}
         </button>
       </div>
       <div className='container mx-auto'>
         <div className='flex flex-wrap'>
         {
-          people.error == '' ? 
-            people.peoples.map((people: People) => (
+          // error == undefined ? 
+            peoples.map((people) => (
                 <Card data={people} key={people.id} />
-          )) : people.error}
+          )) }
         </div>
       </div>
     </>

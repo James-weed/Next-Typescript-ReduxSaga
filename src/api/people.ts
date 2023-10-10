@@ -1,7 +1,7 @@
 import axios from 'axios'
-import { People } from '@/app/model/people'
+import { People, User } from '@/app/model/people'
 
 export const getPeople = async () => {
-  const res = await axios.get('https://random-data-api.com/api/users/random_user?size=10')
-  return res.data as People[];
+  const res = await axios.get('https://api.slingacademy.com/v1/sample-data/users?offset=10&limit=20')
+  return res.data.users as User[];
 }
