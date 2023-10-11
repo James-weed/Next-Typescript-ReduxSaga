@@ -1,21 +1,20 @@
 'use client'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useDeferredValue, useEffect, useState } from 'react'
 import Card from '../component/Card'
 import Head from 'next/head'
 import { useUsercontext } from '../store/context'
 
 export default React.memo(function PeopleList() {
 
-  const { people, loading, loadMore, setFilters } = useUsercontext()
-  const [search, setSearch] = useState('')
+  const { people, loading, loadMore, filters, setFilters } = useUsercontext()
 
   const handleClick = () => {
-    setFilters(search)
+    loadMore()
   }
 
   const handleScroll = useCallback(() => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    if (scrollTop + clientHeight == scrollHeight) {
+    if (scrollTop + clientHeight >= scrollHeight-1) {
       loadMore();
     }
   }, [loadMore]);
@@ -37,7 +36,7 @@ export default React.memo(function PeopleList() {
         <meta property="og:title" content="PeopleList" key="title" />
       </Head>
       <div className='flex items-center justify-center mt-4'>
-        <input type="text" className="w-full px-3 py-2 border rounded-lg" placeholder="Enter something..." value={search} onChange={(e) => {setSearch(e.target.value)}}/>
+        <input type="text" className="w-full px-3 py-2 border rounded-lg" placeholder="Enter something..." value={filters} onChange={(e) => { setFilters(e.target.value)}}/>
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-16 rounded" onClick={() => { handleClick() }}>
           {loading ? 'loading...' : 'Get People'}
         </button>

@@ -93,7 +93,6 @@ export default function useSearchPeople(
   )
 
     useEffect(() => {
-      console.log(filters)
     if (!isEqual(filterRef.current, filters)) {
       if (!isEqual(state, initialState)) {
         dispatch({
