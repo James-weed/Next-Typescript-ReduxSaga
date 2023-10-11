@@ -64,11 +64,11 @@ export interface User {
     zipcode: number;
 }
 
-export interface People {
+export interface Peoples {
     limit: number,
     message: string,
     offset: number,
     success: boolean,
     total_users: number,
-    users: User
+    users: User[]
 }
