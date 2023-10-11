@@ -1,21 +1,20 @@
-import React, { createContext, useContext, useEffect, useCallback } from 'react';
-import { People, User } from '../model/people';
-import { useFetchPeople } from './hooks/useFetchPeople';
-import { Island_Moments } from 'next/font/google';
+import React, { createContext, useContext, useEffect, useCallback, useState } from 'react';
+import { User } from '../model/people';
+import useSearchPeople from './hooks/useSearchPeople';
 
 type UserContextType = {
-  peoples: User[];
-  isLoading: boolean;
-  addPeoples: () => void;
-  resetPeoples: () => void;
+  people: User[];
+  loading: boolean;
+  loadMore: () => void;
+  setFilters: any
 };
 
-const UserContext = createContext<UserContextType>({ peoples: [], isLoading: false, addPeoples: () => {}, resetPeoples: () => {}});
+const UserContext = createContext<UserContextType>({ people: [], loading: false, loadMore: () => {}, setFilters: () => {}});
 
-export const UserProvider = ({children} : any) => {
-
-    const { peoples, isLoading, addPeoples, resetPeoples} = useFetchPeople();
-    const value = {peoples, isLoading, addPeoples, resetPeoples}
+export const UserProvider = ({ children }: any) => {
+    const [filters, setFilters] = useState('')
+    const { people, loading, loadMore} = useSearchPeople(filters, 10);
+    const value = {people, loading, loadMore, setFilters}
     return (
         <UserContext.Provider value={value}>
             {children}
