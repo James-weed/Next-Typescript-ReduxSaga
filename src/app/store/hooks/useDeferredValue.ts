@@ -3,10 +3,10 @@ import { useCallback, useState, useRef, useEffect } from 'react'
 const useDeferredValue = (value : string) => {
     
     const [def, setDef] = useState('')
-    const timeId = useRef(0)
+    const timeId = useRef()
 
-    const debounce = useCallback((val : string) => {
-        clearTimeout(timeId.current);
+    const debounce = useCallback((val: string) => {
+        if (timeId.current) clearTimeout(timeId.current);
 
         //@ts-ignore
         timeId.current = setTimeout(() => {
